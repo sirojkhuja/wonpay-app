@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "./layout/Layout";
 import { Link } from "react-router-dom";
 
-const Admin = () => {
+const CurerPage = () => {
     return (
         <Layout>
             <div className="admin-page">
@@ -28,16 +28,14 @@ const Admin = () => {
                         <div className="home-category-img">
                             <Link to="/novercourse">
                                 <img
-                                    src="assets/img/admin/naver.png"
+                                    src="assets/img/curer/give-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
                         <Link to="/novercourse">
                             <div className="home-category-text">
-                                <span>
-                                    Naver <br /> Valyuta kurslari
-                                </span>
+                                <span>Pul Olish</span>
                             </div>
                         </Link>
                     </div>
@@ -45,16 +43,14 @@ const Admin = () => {
                         <div className="home-category-img">
                             <Link to="/uzbcourse">
                                 <img
-                                    src="assets/img/admin/bank.png"
+                                    src="assets/img/curer/get-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
                         <Link to="uzbcourse">
                             <div className="home-category-text">
-                                <span>
-                                    O’zbekiston <br /> banklari kurslari
-                                </span>
+                                <span>Pul Berish</span>
                             </div>
                         </Link>
                     </div>
@@ -62,61 +58,14 @@ const Admin = () => {
                         <div className="home-category-img">
                             <Link to="/curers">
                                 <img
-                                    src="assets/img/admin/curers.png"
+                                    src="assets/img/curer/submit-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
                         <Link to="/curers">
                             <div className="home-category-text">
-                                <span>Kuryerlar</span>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
-                <div className="admin-body">
-                    <div className="category-card">
-                        <div className="home-category-img">
-                            <Link to="/depts">
-                                <img
-                                    src="assets/img/admin/depts.png"
-                                    alt="admin1"
-                                />
-                            </Link>
-                        </div>
-                        <Link to="/depts">
-                            <div className="home-category-text">
-                                <span>Qarzlar</span>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="category-card">
-                        <div className="home-category-img">
-                            <Link to="/cashflow">
-                                <img
-                                    src="assets/img/admin/cashflow.png"
-                                    alt="admin1"
-                                />
-                            </Link>
-                        </div>
-                        <Link to="cashflow">
-                            <div className="home-category-text">
-                                <span>Pul oqimi</span>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="category-card">
-                        <div className="home-category-img">
-                            <Link to="/reports">
-                                <img
-                                    src="assets/img/admin/reports.png"
-                                    alt="admin1"
-                                />
-                            </Link>
-                        </div>
-                        <Link to="/reports">
-                            <div className="home-category-text">
-                                <span>Umumiy Hisobot</span>
+                                <span>Pul Topshirish</span>
                             </div>
                         </Link>
                     </div>
@@ -127,14 +76,14 @@ const Admin = () => {
                         <div className="home-category-img">
                             <Link to="/offerrequest">
                                 <img
-                                    src="assets/img/admin/offer.png"
+                                    src="assets/img/curer/report.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
                         <Link to="/offerrequest">
                             <div className="home-category-text">
-                                <span>Takliflar/ So'rovlar</span>
+                                <span>Tarix</span>
                             </div>
                         </Link>
                     </div>
@@ -142,14 +91,14 @@ const Admin = () => {
                         <div className="home-category-img">
                             <Link to="/profit">
                                 <img
-                                    src="assets/img/admin/profit.png"
+                                    src="assets/img/curer/message.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
                         <Link to="/profit">
                             <div className="home-category-text">
-                                <span>Umumiy Foyda</span>
+                                <span>Xabarlar</span>
                             </div>
                         </Link>
                     </div>
@@ -159,4 +108,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default CurerPage;

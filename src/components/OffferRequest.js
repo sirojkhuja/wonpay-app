@@ -5,7 +5,7 @@ const OfferRequst = () => {
     return (
         <Layout>
             <div className="offer-request-page">
-                <div className="offers-page">
+                <div className="offers-page-x">
                     <div className="request-header">
                         <span>Takliflar:</span>
                         <span>W32.000.000</span>
@@ -98,7 +98,7 @@ const OfferRequst = () => {
                         </div>
                     </div>
                 </div>
-                <div className="request-page">
+                <div className="offer-page-x">
                     <div className="request-header">
                         <span>So'rovlar:</span>
                         <span>W15.000.000</span>
@@ -169,8 +169,6 @@ const OfferRequst = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="request-body-item">
                             <div className="request-time">22.08.2022</div>
                             <div className="request-table">
                                 <div className="container">
@@ -228,7 +226,6 @@ const OfferRequst = () => {
                     </div>
                 </div>
             </div>
-            ;
         </Layout>
     );
 };

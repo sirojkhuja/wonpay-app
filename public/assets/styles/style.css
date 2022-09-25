@@ -21,12 +21,11 @@ a{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    padding: 0 20px; 
+    
 }
 .home-header{
     display: flex;
-    padding: 20px 10px;
+    padding: 10px 10px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #9F9C9C
@@ -39,7 +38,7 @@ a{
     font-weight: 700;
 }
 .home-footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -86,19 +85,32 @@ a{
   background-color: var(--yellow-color);
 }
 .category-card{
-    width: 30%;
+    width: 28vw;
+    height: calc(28vw*4/3);
     display: flex;
     flex-direction: column;
-    height: 150px;
     background-color: #C3C6FF;
     border-radius: 20px;
     align-items: center;
     text-align: center;
-    gap: 5px;
     padding-top: 10px;
 }
 
-
+.home-category-img{
+    width: 100%;
+    height: 60%;
+}
+.home-category-img img{
+    height: 80%;
+    width: 80%;
+}
+.home-category-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2.8vw;
+    font-weight: 600;
+}
 .money-btn{
     font-size: 25px;
     font-weight: 600;
@@ -596,24 +608,42 @@ a{
     background-color: #E9E9F7;
     width: 100vw;
     height: 100vh;
+    padding: 10px;
+    background-image: url("/assets/img/admin/admin.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 .admin-header{
     display: flex;
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 800;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: .7px solid var(--main-color);
 }
 .admin-header .col-4{
     text-align: center;
-    padding: 10px;
 
 }
 .admin-body{
-    box-sizing: border-box;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 11;
+}
+.admin-body-x{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 2.5vw;
+  z-index: 11;
+}
+
+.admin-footer a img{
+    height: 100%;
 }
 .admin-body .col-4{
     margin-top: 20px;
@@ -642,7 +672,7 @@ a{
 .chc-header{
 
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 30px;
     font-size: 14px;
     font-weight: 600;
     border-bottom: 2px solid var(--black-color);
@@ -651,12 +681,13 @@ a{
 .chc-header-item{
     display: flex;
     justify-content: space-between;
+    font-size: 3.2vw;
 }
 .chc-body{
     padding: 10px;
 }
 .chc-body h3{
-    margin-top: 20px;
+    margin-top: 1.8em;
     font-weight: 700;
 }
 .chc-body-item-title{
@@ -670,9 +701,12 @@ a{
     font-weight: 700;
     margin-bottom: 0;
 }
+.chc-body-item-body img{
+    width: 90%;
+}
 .chc-body-item-title span{
     font-weight: 800;
-    font-size: 30px;
+    font-size: 1.5em;
 }
 /**** Requests ***/
 
@@ -683,7 +717,7 @@ a{
 }
 .request-header{
     padding: 20px;
-    font-size: 25px;
+    font-size: 6vw;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -693,20 +727,32 @@ a{
 .request-body{
     padding: 10px;
 }
-.offer-request-body{
+.offer-request-page{
+    height: 100vh;
+    background-color: #E9E9F7;
+}
+.offer-request-body .request-body-item{
     padding: 10px;
-    height: 30vh;
+    height: 35vh;
     overflow-y: scroll;
+}
+.offer-request-body .col-2{
+    font-size: 3vw !important;
+}
+.offers-page-x .request-header{
+    padding: 10px;
 }
 .request-body-title{
     padding-top: 10px;
     font-weight: 600;
     border-bottom: 2px solid #b3b3b3;
+ 
 }
 .request-body-title .col-2{
     border-left: 2px solid #b3b3b3;
     padding: 0;
     text-align: center;
+    font-size: 4vw;
 }
 .request-body-content{
     margin-top: 10px;
@@ -725,7 +771,8 @@ a{
 .offers-page{
     background-color: #E9E9F7;
     width: 100vw;
-    height: 100vh;  
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 .offers-page .request-body-title{
     font-size: 14px;
@@ -793,7 +840,7 @@ a{
     height: 100vh;
 }
 .curer-body{
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 20px;
 }
 .curer-item .row{
@@ -807,14 +854,20 @@ a{
 .curer-item{
     margin-bottom: 20px;
 }
+.curer-item h3{
+    font-size: 5vw;
+    font-weight: 700;
+}
 .curer-item  img{
- transform: scale(0.8);
+    width: 100%;
 }
 .curer-item span{
+    font-size: 4vw;
     font-weight: 700;
 }
 .curer-item p{
-    margin-bottom: 8px;
+    font-size: 4vw;
+    margin-bottom: 4px;
     font-weight: 600;
 }
 .curer-item-footer{

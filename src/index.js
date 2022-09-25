@@ -4,10 +4,11 @@ import App from "./App";
 import Apx from "./Apx";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Apc from "./Apc";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        {true ? <App /> : false ? <App /> : <Apx />}
+        {true ? <App /> : true ? <Apc /> : <Apx />}
     </React.StrictMode>
 );
