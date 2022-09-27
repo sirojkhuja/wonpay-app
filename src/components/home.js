@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+    console.log(window.Telegram.WebApp.initDataUnsafe.user);
+
+    console.log("first");
     return (
         <div className="home-page">
             <div className="home-header">
@@ -21,14 +24,18 @@ const Home = () => {
                 <div className="home-category">
                     <div className="category-card">
                         <div className="home-category-img">
-                            <img
-                                src="assets/img/icons/calendar.png"
-                                alt="calendar"
-                            />
+                            <Link to="/profile">
+                                <img
+                                    src="assets/img/icons/calendar.png"
+                                    alt="calendar"
+                                />
+                            </Link>
                         </div>
-                        <div className="home-category-text">
-                            <span>O'tkazmalar tarixi</span>
-                        </div>
+                        <Link to="profile">
+                            <div className="home-category-text">
+                                <span>O'tkazmalar tarixi</span>
+                            </div>
+                        </Link>
                     </div>
                     <div className="category-card">
                         <div className="home-category-img">
@@ -61,9 +68,6 @@ const Home = () => {
                 <Link to="/kor-uzb">
                     <button className="money-btn">Kor {">>"} Uzb</button>
                 </Link>
-            </div>
-            <div className="home-footer">
-                <img src="assets/img/icons/home.png" alt="home" />
             </div>
         </div>
     );

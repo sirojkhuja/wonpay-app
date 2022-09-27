@@ -21,7 +21,10 @@ a{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    
+    height: 100vh;
+    background-image: url("/assets/img/icons/home.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 .home-header{
     display: flex;
