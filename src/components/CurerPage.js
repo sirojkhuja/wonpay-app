@@ -26,14 +26,14 @@ const CurerPage = () => {
                 <div className="admin-body">
                     <div className="category-card">
                         <div className="home-category-img">
-                            <Link to="/novercourse">
+                            <Link to="/getmoney">
                                 <img
                                     src="assets/img/curer/give-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
-                        <Link to="/novercourse">
+                        <Link to="/getmoney">
                             <div className="home-category-text">
                                 <span>Pul Olish</span>
                             </div>
@@ -41,14 +41,14 @@ const CurerPage = () => {
                     </div>
                     <div className="category-card">
                         <div className="home-category-img">
-                            <Link to="/uzbcourse">
+                            <Link to="/givemoney">
                                 <img
                                     src="assets/img/curer/get-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
-                        <Link to="uzbcourse">
+                        <Link to="givemoney">
                             <div className="home-category-text">
                                 <span>Pul Berish</span>
                             </div>
@@ -56,14 +56,14 @@ const CurerPage = () => {
                     </div>
                     <div className="category-card">
                         <div className="home-category-img">
-                            <Link to="/curers">
+                            <Link to="/curersale">
                                 <img
                                     src="assets/img/curer/submit-money.png"
                                     alt="admin1"
                                 />
                             </Link>
                         </div>
-                        <Link to="/curers">
+                        <Link to="/curersale">
                             <div className="home-category-text">
                                 <span>Pul Topshirish</span>
                             </div>

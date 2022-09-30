@@ -153,6 +153,21 @@ const Admin = () => {
                             </div>
                         </Link>
                     </div>
+                    <div className="category-card">
+                        <div className="home-category-img">
+                            <Link to="/profit">
+                                <img
+                                    src="assets/img/curer/message.png"
+                                    alt="admin1"
+                                />
+                            </Link>
+                        </div>
+                        <Link to="/profit">
+                            <div className="home-category-text">
+                                <span>Umumiy Foyda</span>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </Layout>

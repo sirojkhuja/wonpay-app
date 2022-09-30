@@ -5,10 +5,11 @@ import Apx from "./Apx";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Apc from "./Apc";
+import { APIContextProvider } from "./ApiContext/ApiContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        {true ? <App /> : true ? <Apc /> : <Apx />}
-    </React.StrictMode>
+    <APIContextProvider>
+        {false ? <App /> : false ? <Apc /> : <Apx />}
+    </APIContextProvider>
 );

@@ -5,6 +5,11 @@ const NoverCourse = () => {
     return (
         <Layout>
             <div className="change-course">
+                <div className="home-header">
+                    <div className="logo">
+                        <img src="assets/img/icons/logo.png" alt="logo" />
+                    </div>
+                </div>
                 <div className="chc-body">
                     <h3>Nover Valyuta kurslari:</h3>
                     <div className="chc-body-item">

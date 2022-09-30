@@ -1,10 +1,20 @@
 import React from "react";
 import Layout from "./layout/Layout";
+import { useNavigate, Link } from "react-router-dom";
 
 const Reports = () => {
+    const navigate = useNavigate();
     return (
         <Layout>
             <div className="offers-page">
+                <div className="home-header">
+                    <div className="logo">
+                        <img src="assets/img/icons/logo.png" alt="logo" />
+                    </div>
+                </div>
+                <div className="request-header">
+                    <span>O'tkazmalar Tarixi:</span>
+                </div>
                 <div className="request-body">
                     <div className="request-body-title">
                         <div className="container">
@@ -120,6 +130,16 @@ const Reports = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="curer-footer">
+                    <Link to="/">
+                        <img src="assets/img/icons/home2.png" alt="user" />
+                    </Link>
+                    <img
+                        onClick={() => navigate(-1)}
+                        src="assets/img/icons/back.png"
+                        alt="back"
+                    />
                 </div>
             </div>
         </Layout>

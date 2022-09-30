@@ -5,6 +5,11 @@ const ChangeCourse = () => {
     return (
         <Layout>
             <div className="change-course">
+                <div className="home-header">
+                    <div className="logo">
+                        <img src="assets/img/icons/logo.png" alt="logo" />
+                    </div>
+                </div>
                 <div className="chc-header">
                     <div className="row">
                         <div className="col-6">

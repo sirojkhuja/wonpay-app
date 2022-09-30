@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-    console.log(window.Telegram.WebApp.initDataUnsafe.user);
-
-    console.log("first");
     return (
         <div className="home-page">
             <div className="home-header">
@@ -39,14 +36,18 @@ const Home = () => {
                     </div>
                     <div className="category-card">
                         <div className="home-category-img">
-                            <img
-                                src="assets/img/icons/refresh.png"
-                                alt="calendar"
-                            />
+                            <Link to="/sale">
+                                <img
+                                    src="assets/img/icons/refresh.png"
+                                    alt="calendar"
+                                />
+                            </Link>
                         </div>
-                        <div className="home-category-text">
-                            <span>Oldi-Berdilar</span>
-                        </div>
+                        <Link to="/sale">
+                            <div className="home-category-text">
+                                <span>Oldi-Berdilar</span>
+                            </div>
+                        </Link>
                     </div>
                     <div className="category-card">
                         <div className="home-category-img">
@@ -55,9 +56,11 @@ const Home = () => {
                                 alt="calendar"
                             />
                         </div>
-                        <div className="home-category-text">
-                            <span>Xabarlar</span>
-                        </div>
+                        <Link to="/message">
+                            <div className="home-category-text">
+                                <span>Xabarlar</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

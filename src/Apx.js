@@ -10,6 +10,8 @@ import OfferRequst from "./components/OffferRequest";
 import Profit from "./components/Profit";
 import Reports from "./components/Reports";
 import Requests from "./components/Requests";
+import SingleOffers from "./components/SingleOffer";
+import SingleRequests from "./components/SingleRequest";
 import UzbCourse from "./components/UzbCourse";
 
 function Apx() {
@@ -23,7 +25,9 @@ function Apx() {
                 <Route path="/reports" element={<Reports />} />
                 <Route path="/offerrequest" element={<OfferRequst />} />
                 <Route path="/offers" element={<Offers />} />
+                <Route path="/singleoffers" element={<SingleOffers />} />
                 <Route path="/requests" element={<Requests />} />
+                <Route path="/singlerequests" element={<SingleRequests />} />
                 <Route path="/profit" element={<Profit />} />
                 <Route path="/uzbcourse" element={<UzbCourse />} />
                 <Route path="/novercourse" element={<NoverCourse />} />

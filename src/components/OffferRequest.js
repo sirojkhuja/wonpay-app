@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "./layout/Layout";
+import { Link } from "react-router-dom";
+import RequestModal from "./RequestModal";
 
 const OfferRequst = () => {
+    const [modalShow, setModalShow] = useState(false);
     return (
         <Layout>
             <div className="offer-request-page">
-                <div className="offers-page-x">
-                    <div className="request-header">
-                        <span>Takliflar:</span>
-                        <span>W32.000.000</span>
+                <RequestModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
+                <div className="home-header">
+                    <div className="logo">
+                        <img src="assets/img/icons/logo.png" alt="logo" />
                     </div>
+                </div>
+                <div className="offers-page-x">
+                    <Link to="/offers">
+                        <div className="request-header">
+                            <span>Takliflar:</span>
+                            <span>W32.000.000</span>
+                        </div>
+                    </Link>
                     <div className="offer-request-body">
                         <div className="request-body-title">
                             <div className="container">
@@ -32,7 +46,12 @@ const OfferRequst = () => {
                                             Farruh Soipov
                                         </div>
                                         <div className="col-2">2.000</div>
-                                        <div className="col-2">Ko'rish</div>
+                                        <div
+                                            className="col-2"
+                                            onClick={() => setModalShow(true)}
+                                        >
+                                            Ko'rish
+                                        </div>
                                         <div className="col-2">Kiritish</div>
                                         <div className="col-2">Karta</div>
                                         <div className="col-2">Taqsimlash</div>
@@ -46,7 +65,12 @@ const OfferRequst = () => {
                                             Farruh Soipov
                                         </div>
                                         <div className="col-2">2.000</div>
-                                        <div className="col-2">Ko'rish</div>
+                                        <div
+                                            className="col-2"
+                                            onClick={() => setModalShow(true)}
+                                        >
+                                            Ko'rish
+                                        </div>
                                         <div className="col-2">Kiritish</div>
                                         <div className="col-2">Karta</div>
                                         <div className="col-2">Taqsimlash</div>
@@ -60,7 +84,12 @@ const OfferRequst = () => {
                                             Farruh Soipov
                                         </div>
                                         <div className="col-2">2.000</div>
-                                        <div className="col-2">Ko'rish</div>
+                                        <div
+                                            className="col-2"
+                                            onClick={() => setModalShow(true)}
+                                        >
+                                            Ko'rish
+                                        </div>
                                         <div className="col-2">Kiritish</div>
                                         <div className="col-2">Karta</div>
                                         <div className="col-2">Taqsimlash</div>
@@ -74,7 +103,12 @@ const OfferRequst = () => {
                                             Farruh Soipov
                                         </div>
                                         <div className="col-2">2.000</div>
-                                        <div className="col-2">Ko'rish</div>
+                                        <div
+                                            className="col-2"
+                                            onClick={() => setModalShow(true)}
+                                        >
+                                            Ko'rish
+                                        </div>
                                         <div className="col-2">Kiritish</div>
                                         <div className="col-2">Karta</div>
                                         <div className="col-2">Taqsimlash</div>
@@ -88,7 +122,12 @@ const OfferRequst = () => {
                                             Farruh Soipov
                                         </div>
                                         <div className="col-2">2.000</div>
-                                        <div className="col-2">Ko'rish</div>
+                                        <div
+                                            className="col-2"
+                                            onClick={() => setModalShow(true)}
+                                        >
+                                            Ko'rish
+                                        </div>
                                         <div className="col-2">Kiritish</div>
                                         <div className="col-2">Karta</div>
                                         <div className="col-2">Taqsimlash</div>
@@ -99,10 +138,12 @@ const OfferRequst = () => {
                     </div>
                 </div>
                 <div className="offer-page-x">
-                    <div className="request-header">
-                        <span>So'rovlar:</span>
-                        <span>W15.000.000</span>
-                    </div>
+                    <Link to="/requests">
+                        <div className="request-header">
+                            <span>So'rovlar:</span>
+                            <span>W15.000.000</span>
+                        </div>
+                    </Link>
                     <div className="offer-request-body">
                         <div className="request-body-title">
                             <div className="container">
