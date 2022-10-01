@@ -4,46 +4,29 @@ import PropTypes from "prop-types";
 const APIContext = createContext();
 
 export function APIContextProvider({ children }) {
-    const [chat_id, setChat_id] = useState();
-    const [type, chatid] = window.location.search.split("=");
-    console.log("chatid: ", chatid, "type:", type);
+    const [chatId, setChatId] = useState();
+    const [type, chat_id] = window.location.search.split("=");
     useEffect(() => {
         if (type === "?chat_id") {
-            setChat_id(chatid);
+            setChatId(chat_id);
         } else {
-            setChat_id("");
+            setChatId("");
         }
-    }, []);
-    console.log(chat_id);
+    }, [chat_id, type]);
     async function getUser() {
-        // const requestOptions = {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-
-        //     body: JSON.stringify({
-        //         chat_id: 577666875,
-        //     }),
-        // };
-        // fetch(`https://wonpay.thesmart.uz/api/bot-login`, requestOptions)
-        //     .then((response) => response.json())
-        //     .then((data) => {
-        //         console.log("user", data);
-        //     })
-        //     .catch((err) => console.log(err.message));
-
         fetch("https://wonpay.thesmart.uz/api/bot-login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                chat_id: 577666875,
+                chat_id: chatId,
             }),
         })
             .then((res) => res.json())
-            .then((data) => console.log(data))
+            .then((data) => {
+                setChatId()
+            })
             .catch((err) => console.log(err));
     }
 
@@ -51,7 +34,7 @@ export function APIContextProvider({ children }) {
     return (
         <APIContext.Provider
             value={{
-                chat_id,
+                chatId,
             }}
         >
             {children}

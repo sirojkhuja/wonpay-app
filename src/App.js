@@ -6,10 +6,10 @@ import KorUzb from "./components/KorUzb";
 import UzbKor from "./components/UzbKor";
 import Profilenext from "./components/ProfileNext";
 import Profile2 from "./components/Profile-2";
-import Transactions from "./components/Transactions";
+// import Transactions from "./components/Transactions";
 import Sale from "./components/Sale";
 import Messages from "./components/Messages";
-import TransactionDetail from "./components/TransactionDetail";
+// import TransactionDetail from "./components/TransactionDetail";
 
 function App() {
     return (
