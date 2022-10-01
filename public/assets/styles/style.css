@@ -21,7 +21,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: inherit;
     background-image: url("/assets/img/icons/home.png");
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -735,7 +735,7 @@ a {
 .admin-page {
     background-color: #E9E9F7;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     padding: 10px;
     background-image: url("/assets/img/admin/admin.png");
     background-position: right bottom;
