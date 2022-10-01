@@ -18,11 +18,6 @@ const Admin = () => {
                         <span>Anvar Sobirov</span>
                     </div>
                 </div>
-                <div className="admin-header">
-                    <div className="col-4">W 38.000</div>
-                    <div className="col-4">$ 32.000</div>
-                    <div className="col-4">$ +16.000</div>
-                </div>
                 <div className="admin-body">
                     <div className="category-card">
                         <div className="home-category-img">
@@ -122,7 +117,7 @@ const Admin = () => {
                     </div>
                 </div>
 
-                <div className="admin-body-x">
+                <div className="admin-body">
                     <div className="category-card">
                         <div className="home-category-img">
                             <Link to="/offerrequest">
@@ -149,7 +144,7 @@ const Admin = () => {
                         </div>
                         <Link to="/profit">
                             <div className="home-category-text">
-                                <span>Umumiy Foyda</span>
+                                <span>Umumiy <br/> Foyda</span>
                             </div>
                         </Link>
                     </div>
@@ -164,7 +159,7 @@ const Admin = () => {
                         </div>
                         <Link to="/profit">
                             <div className="home-category-text">
-                                <span>Umumiy Foyda</span>
+                                <span>Xabarlar</span>
                             </div>
                         </Link>
                     </div>
