@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Admin from "./components/Admin";
-import CashFlow from "./components/CashFlow";
-import Curers from "./components/Curers";
-import Depts from "./components/Depts";
-import NoverCourse from "./components/NoverCourse";
-import Offers from "./components/Offers";
-import OfferRequst from "./components/OffferRequest";
-import Profit from "./components/Profit";
-import Reports from "./components/Reports";
-import Requests from "./components/Requests";
-import SingleOffers from "./components/SingleOffer";
-import SingleRequests from "./components/SingleRequest";
-import UzbCourse from "./components/UzbCourse";
+import Admin from "../Admin";
+import CashFlow from "../CashFlow";
+import Curers from "../Curers";
+import Depts from "../Depts";
+import NoverCourse from "../NoverCourse";
+import Offers from "../Offers";
+import OfferRequst from "../OffferRequest";
+import Profit from "../Profit";
+import Reports from "../Reports";
+import Requests from "../Requests";
+import SingleOffers from "../SingleOffer";
+import SingleRequests from "../SingleRequest";
+import UzbCourse from "../UzbCourse";
 
-function Apx() {
+function AdminApp() {
     return (
         <Router>
             <Routes>
@@ -34,6 +34,7 @@ function Apx() {
             </Routes>
         </Router>
     );
+
 }
 
-export default Apx;
+export default AdminApp;

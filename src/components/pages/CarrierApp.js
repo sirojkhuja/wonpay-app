@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import CurerPage from "./components/CurerPage";
-import CurerSale from "./components/CurerSale";
-import GetMoney from "./components/GetMoney";
-import GiveMoney from "./components/GiveMoney";
+import CurerPage from "../CurerPage";
+import CurerSale from "../CurerSale";
+import GetMoney from "../GetMoney";
+import GiveMoney from "../GiveMoney";
 
-function Apc() {
+function CarrierApp() {
     return (
         <Router>
             <Routes>
@@ -18,4 +18,4 @@ function Apc() {
     );
 }
 
-export default Apc;
+export default CarrierApp;
