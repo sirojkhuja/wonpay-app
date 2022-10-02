@@ -28,11 +28,15 @@ a {
 }
 
 .home-header {
+    width: 100vw;
+    transform: translateX(-10px);
     display: flex;
     padding: 10px 10px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #9F9C9C
+    margin-bottom: 2vh;
+    box-shadow: 0px 3px 8px rgb(101 101 102 / 14%);
+    border-bottom: 2px solid #9f9c9c8c;
 }
 
 .home-profile {
@@ -122,7 +126,7 @@ a {
     height: calc(28vw*4/3.2);
     display: grid;
     grid-template-rows: 70% 30%;
-    background-color: #C3C6FF;
+    background-color: #e2e4f7;
     border-radius: 20px;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -735,8 +739,8 @@ a {
 .admin-page {
     background-color: #E9E9F7;
     width: 100vw;
-    height: 130vh;
-    padding: 10px;
+    min-height: 100vh;
+    padding: 0 10px;
     background-image: url("/assets/img/admin/admin.png");
     background-position: right bottom;
     background-repeat: no-repeat;
