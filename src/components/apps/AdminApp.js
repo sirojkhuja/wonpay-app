@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Admin from "../misc/Admin";
 import CashFlow from "../misc/CashFlow";
 import Curers from "../carrier/Curers";
-import Depts from "../debt/Depts";
+import Debts from "../debt/Debts";
 import NoverCourse from "../misc/NaverCourse";
 import Offers from "../misc/Offers";
 import OfferRequst from "../misc/OfferRequest";
@@ -20,7 +20,7 @@ function AdminApp() {
             <Routes>
                 <Route path="/" element={<Admin />} />
                 <Route path="/curers" element={<Curers />} />
-                <Route path="/depts" element={<Depts />} />
+                <Route path="/debts" element={<Debts />} />
                 <Route path="/cashflow" element={<CashFlow />} />
                 <Route path="/reports" element={<Reports />} />
                 <Route path="/offerrequest" element={<OfferRequst />} />
@@ -29,8 +29,9 @@ function AdminApp() {
                 <Route path="/requests" element={<Requests />} />
                 <Route path="/singlerequests" element={<SingleRequests />} />
                 <Route path="/profit" element={<Profit />} />
+                <Route path="/notifications" element={<Profit />} />
                 <Route path="/uzbcourse" element={<UzbCourse />} />
-                <Route path="/novercourse" element={<NoverCourse />} />
+                <Route path="/navercourse" element={<NoverCourse />} />
             </Routes>
         </Router>
     );

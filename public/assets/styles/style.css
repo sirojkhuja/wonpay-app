@@ -169,6 +169,7 @@ a {
 /**** Layout ****/
 
 .layout-back {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,6 +183,7 @@ a {
 }
 
 .layout-user {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +197,7 @@ a {
 }
 
 .layout-signal {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -761,6 +764,14 @@ a {
 .admin-header .col-4 {
     text-align: center;
 
+}
+
+.admin-menu {
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    padding: 10px;
 }
 
 .admin-body {
