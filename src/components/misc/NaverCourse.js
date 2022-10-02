@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "./layout/Layout";
+import Layout from "../layouts/Layout";
 
-const UzbCourse = () => {
+const NoverCourse = () => {
     return (
         <Layout>
             <div className="change-course">
@@ -11,11 +11,11 @@ const UzbCourse = () => {
                     </div>
                 </div>
                 <div className="chc-body">
-                    <h3>O'zbekiston Valyuta kurslari:</h3>
+                    <h3>Nover Valyuta kurslari:</h3>
                     <div className="chc-body-item">
                         <div className="chc-body-item-title">
                             <h4>Sotib olish:</h4>
-                            <span>$1 = 11.000 sum</span>
+                            <span>$1 = W1.250</span>
                         </div>
                         <div className="chc-body-item-body">
                             <img src="assets/img/table/table.png" alt="table" />
@@ -24,7 +24,7 @@ const UzbCourse = () => {
                     <div className="chc-body-item">
                         <div className="chc-body-item-title">
                             <h4>Sotish:</h4>
-                            <span>$1 = 11.100 sum</span>
+                            <span>$1 = W1.350</span>
                         </div>
                         <div className="chc-body-item-body">
                             <img src="assets/img/table/table.png" alt="table" />
@@ -36,4 +36,4 @@ const UzbCourse = () => {
     );
 };
 
-export default UzbCourse;
+export default NoverCourse;

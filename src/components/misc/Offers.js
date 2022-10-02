@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "./layout/Layout";
+import Layout from "../layouts/Layout";
 import { Link } from "react-router-dom";
 
 const Offers = () => {

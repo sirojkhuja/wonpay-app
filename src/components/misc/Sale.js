@@ -1,5 +1,5 @@
 import React from "react";
-import Layout2 from "./layout/Layout";
+import Layout2 from "../layouts/Layout";
 
 const Sale = () => {
     return (

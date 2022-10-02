@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CurerModal from "./CurerModal";
+import CurerModal from "../modals/CurerModal";
 import { useNavigate, Link } from "react-router-dom";
 
 const CurerSale = () => {

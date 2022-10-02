@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layout2 from "./layout/Layout";
+import Layout2 from "../layouts/Layout";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
 

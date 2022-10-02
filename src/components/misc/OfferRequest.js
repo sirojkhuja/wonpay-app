@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Layout from "./layout/Layout";
+import Layout from "../layouts/Layout";
 import { Link } from "react-router-dom";
-import RequestModal from "./RequestModal";
+import RequestModal from "../modals/RequestModal";
 
 const OfferRequst = () => {
     const [modalShow, setModalShow] = useState(false);

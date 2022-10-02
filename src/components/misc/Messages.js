@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Layout2 from "./layout/Layout";
+import Layout2 from "../layouts/Layout";
 import { Link } from "react-router-dom";
-import SaleModal from "./SaleModal";
+import SaleModal from "../modals/SaleModal";
 
 const Messages = () => {
     const [modalShow, setModalShow] = useState(false);

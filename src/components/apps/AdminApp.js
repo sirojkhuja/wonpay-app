@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Admin from "../Admin";
-import CashFlow from "../CashFlow";
-import Curers from "../Curers";
-import Depts from "../Depts";
-import NoverCourse from "../NoverCourse";
-import Offers from "../Offers";
-import OfferRequst from "../OffferRequest";
-import Profit from "../Profit";
-import Reports from "../Reports";
-import Requests from "../Requests";
-import SingleOffers from "../SingleOffer";
-import SingleRequests from "../SingleRequest";
-import UzbCourse from "../UzbCourse";
+import Admin from "../misc/Admin";
+import CashFlow from "../misc/CashFlow";
+import Curers from "../carrier/Curers";
+import Depts from "../debt/Depts";
+import NoverCourse from "../misc/NaverCourse";
+import Offers from "../misc/Offers";
+import OfferRequst from "../misc/OfferRequest";
+import Profit from "../misc/Profit";
+import Reports from "../misc/Reports";
+import Requests from "../request/Requests";
+import SingleOffers from "../misc/SingleOffer";
+import SingleRequests from "../request/SingleRequest";
+import UzbCourse from "../misc/UzbCourse";
 
 function AdminApp() {
     return (

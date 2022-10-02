@@ -1,5 +1,5 @@
 import React from "react";
-import Layout2 from "./layout/Layout-2";
+import Layout2 from "../layouts/Layout-2";
 import { Link } from "react-router-dom";
 
 const Profile = () => {

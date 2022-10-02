@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import AddCurerModal from "./AddCurerModal";
+import AddCurerModal from "../modals/AddCurerModal";
 
 const Curers = () => {
     const navigate = useNavigate();

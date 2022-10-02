@@ -1,7 +1,7 @@
 import { useAPI } from './ApiContext/ApiContext'
-import AdminApp from './components/pages/AdminApp'
-import ClientApp from './components/pages/ClientApp'
-import CarrierApp from './components/pages/CarrierApp'
+import AdminApp from './components/apps/AdminApp'
+import ClientApp from './components/apps/ClientApp'
+import CarrierApp from './components/apps/CarrierApp'
 
 function App() {
     const { user } = useAPI();

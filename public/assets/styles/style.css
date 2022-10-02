@@ -42,23 +42,19 @@ a {
 .home-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-style: 18px;
+    gap: 5px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .home-profile span {
     font-weight: 700;
     font-size: 14px;
+    white-space: nowrap;
 }
 
-.home-profile span:first-child {
-    border-right: 2px solid #9f9c9c;
-    padding-right: 2px;
-}
-
-.home-profile span:nth-child(2) {
-    padding-right: 2px;
+.home-profile .line {
+    font-weight: 100;
 }
 
 .home-profile span b {

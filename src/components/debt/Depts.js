@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import DeptModal from "./DeptModal";
-import Layout from "./layout/Layout";
-import DeptModal2 from "./DeptModal2";
+import DeptModal from "../modals/DeptModal";
+import Layout from "../layouts/Layout";
+import DeptModal2 from "../modals/DeptModal2";
 
 const Depts = () => {
     const [modalShow, setModalShow] = useState(false);

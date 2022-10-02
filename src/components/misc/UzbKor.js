@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import Layout from "./layout/Layout";
-import PutMoneyModal from "./PutMoneyModal";
+import Layout from "../layouts/Layout";
+import PutMoneyModal from "../modals/PutMoneyModal";
 
-const KorUzb = () => {
+const UzbKor = () => {
   const [inputValue, setInputValue] = useState("");
   const [slectedType, setSelectedType] = useState("");
   const [modalShow, setModalShow] = useState(false);
-
+  console.log(slectedType);
   return (
     <Layout>
       <PutMoneyModal show={modalShow} onHide={() => setModalShow(false)} />
       <div className="put-money">
         <div className="black-line"></div>
         <div className="put-money-input">
-          <label htmlFor="put_money">Mavjud Summani Kiriting:</label>
+          <label htmlFor="put_money">Kerakli Summani Kiriting:</label>
           <input
             type="number"
             id="put_money"
@@ -88,23 +88,27 @@ const KorUzb = () => {
         </div>
         <div
           className={
-            slectedType === "card" ? "card-group active" : "card-group"
+            slectedType === "card" ? "card-group-u active" : "card-group-u"
           }
         >
-          <div className="state-details">
-            <h6>O'zbekistonda pulni oluvchi:</h6>
-            <div className="detail-group">
-              <label className="col-3" htmlFor="address-1">
-                Ism:
-              </label>
-              <input className="col-6" type="text" />
+          <h6>SMS:</h6>
+          <div className="card-group-body">
+            <input type="file" id="upload-1" />
+            <div
+              onClick={() => document.getElementById("upload-1").click()}
+              className="file-upload"
+            >
+              <img src="assets/img/icons/upload.png" alt="upload" />
+              <span>Joylashtirish</span>
             </div>
-            <div className="detail-group">
-              <label className="col-3" htmlFor="address-1">
-                Telefon:
-              </label>
-              <input className="col-6" type="number" />
-            </div>
+            <p>Yoki</p>
+            <input type="file" id="upload-2" />
+            <button
+              onClick={() => document.getElementById("upload-2").click()}
+              className="money-btn"
+            >
+              Rasm Yuklash
+            </button>
           </div>
         </div>
       </div>
@@ -118,4 +122,4 @@ const KorUzb = () => {
   );
 };
 
-export default KorUzb;
+export default UzbKor;

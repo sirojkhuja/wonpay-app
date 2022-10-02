@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "./layout/Layout";
+import Layout from "../layouts/Layout";
 import { Link } from "react-router-dom";
 
 const Admin = () => {
@@ -11,11 +11,16 @@ const Admin = () => {
                         <img src="assets/img/icons/logo.png" alt="logo" />
                     </div>
                     <div className="home-profile">
+                        <span className="balance-item">-$5 800</span>
+                        <div className="line">|</div>
+                        <span className="balance-item">$23 600</span>
+                        <div className="line">|</div>
+                        <span className="balance-item">+$3 200</span>
                         <img
                             src="assets/img/icons/profile-mini.png"
                             alt="pro"
                         />
-                        <span>Anvar Sobirov</span>
+                        {/* <span>Anvar Sobirov</span> */}
                     </div>
                 </div>
                 <div className="admin-body">

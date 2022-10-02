@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Profile from "../Profile";
-import Home from "../home";
-import KorUzb from "../KorUzb";
-import UzbKor from "../UzbKor";
-import Profilenext from "../ProfileNext";
-import Profile2 from "../Profile-2";
+import Profile from "../profile/Profile";
+import Home from "../misc/home";
+import KorUzb from "../misc/KorUzb";
+import UzbKor from "../misc/UzbKor";
+import Profilenext from "../profile/ProfileNext";
+import Profile2 from "../profile/Profile-2";
 // import Transactions from "../Transactions";
-import Sale from "../Sale";
-import Messages from "../Messages";
+import Sale from "../misc/Sale";
+import Messages from "../misc/Messages";
 // import TransactionDetail from "../TransactionDetail";
 
 function App() {

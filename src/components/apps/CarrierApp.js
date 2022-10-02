@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import CurerPage from "../CurerPage";
-import CurerSale from "../CurerSale";
-import GetMoney from "../GetMoney";
-import GiveMoney from "../GiveMoney";
+import CurerPage from "../carrier/CurerPage";
+import CurerSale from "../carrier/CurerSale";
+import GetMoney from "../misc/GetMoney";
+import GiveMoney from "../misc/GiveMoney";
 
 function CarrierApp() {
     return (
