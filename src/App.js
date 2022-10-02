@@ -6,7 +6,7 @@ import CarrierApp from './components/pages/CarrierApp'
 function App() {
     const { user } = useAPI();
     if(user) {
-        if(user.user.role === 'admin') {
+        if(['admin', 'superadmin'].includes(user.user.role)) {
             return  <AdminApp />
         }
         if(user.user.role === 'carrier') {
