@@ -14,12 +14,17 @@ const KorUzb = () => {
         <div className="black-line"></div>
         <div className="put-money-input">
           <label htmlFor="put_money">Mavjud Summani Kiriting:</label>
-          <input
-            type="number"
-            id="put_money"
-            onChange={(e) => setInputValue(e.target.value)}
-            value={inputValue}
-          />
+          <div className="input-group text-center">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input
+              type="number"
+              id="put_money"
+              onChange={(e) => setInputValue(e.target.value)}
+              value={inputValue}
+            />
+          </div>
           <span className="korean-won">
             <img src="assets/img/icons/won.png" alt="won" />
           </span>

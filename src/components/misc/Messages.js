@@ -90,8 +90,6 @@ const Messages = () => {
                     </div>
                 </div>
             </div>
-
-            <button className="give-money">Pul Berish</button>
         </Layout2>
     );
 };

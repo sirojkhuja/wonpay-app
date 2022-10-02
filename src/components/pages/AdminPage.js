@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layouts/Layout";
 import MenuCards from "../menu/MenuCards";
 
-const Admin = () => {
+const AdminPage = () => {
     return (
         <Layout>
             <div className="admin-page">
@@ -20,7 +20,6 @@ const Admin = () => {
                             src="assets/img/icons/profile-mini.png"
                             alt="pro"
                         />
-                        {/* <span>Anvar Sobirov</span> */}
                     </div>
                 </div>
                 <MenuCards app="admin" />
@@ -29,4 +28,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AdminPage;

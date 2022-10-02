@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Profile from "../profile/Profile";
-import Home from "../misc/home";
+import ClientPage from "../pages/ClientPage";
 import KorUzb from "../misc/KorUzb";
 import UzbKor from "../misc/UzbKor";
 import Profilenext from "../profile/ProfileNext";
@@ -11,11 +11,11 @@ import Sale from "../misc/Sale";
 import Messages from "../misc/Messages";
 // import TransactionDetail from "../TransactionDetail";
 
-function App() {
+function ClientApp() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<ClientPage />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/profile-2" element={<Profile2 />} />
                 <Route path="/profilenext" element={<Profilenext />} />
@@ -28,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default ClientApp;

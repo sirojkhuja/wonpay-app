@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Admin from "../misc/Admin";
+import AdminPage from "../pages/AdminPage";
 import CashFlow from "../misc/CashFlow";
 import Curers from "../carrier/Curers";
 import Debts from "../debt/Debts";
@@ -18,7 +18,7 @@ function AdminApp() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Admin />} />
+                <Route path="/" element={<AdminPage />} />
                 <Route path="/curers" element={<Curers />} />
                 <Route path="/debts" element={<Debts />} />
                 <Route path="/cashflow" element={<CashFlow />} />

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -17,11 +18,27 @@ a {
     --black-color: #000000;
 }
 
+#root {
+    background-color: #E9E9F7;
+}
+
 .home-page {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: inherit;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.home-page::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
     background-image: url("/assets/img/icons/home.png");
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -37,6 +54,7 @@ a {
     margin-bottom: 2vh;
     box-shadow: 0px 3px 8px rgb(101 101 102 / 14%);
     border-bottom: 2px solid #9f9c9c8c;
+    z-index: 10;
 }
 
 .home-profile {
@@ -75,6 +93,8 @@ a {
 
 .home-body {
     padding: 10px;
+    z-index: 10;
+
 }
 
 .home-money {
@@ -102,15 +122,21 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     padding: 30px 0;
     width: 100%;
+    z-index: 10;
 }
 
 .home-buttons button {
+    width: 80vw;
     padding: 10px 60px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.yellow {
+    background-color: #FEB415 !important;
 }
 
 .home-buttons button:hover {
@@ -141,7 +167,6 @@ a {
 .home-category-text {
     text-align: center;
     font-size: 2.8vw;
-    font-weight: 600;
 }
 
 .money-btn {
@@ -735,7 +760,6 @@ a {
 /**** Admin Page ****/
 
 .admin-page {
-    background-color: #E9E9F7;
     width: 100vw;
     min-height: 100vh;
     padding: 0 10px;
@@ -766,12 +790,19 @@ a {
 
 }
 
+.carrier-menu,
+.client-menu,
 .admin-menu {
     width: inherit;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     padding: 10px;
+}
+
+.client-menu {
+    padding: 0;
+    column-gap: 10px;
 }
 
 .admin-body {
