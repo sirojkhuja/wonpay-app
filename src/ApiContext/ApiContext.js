@@ -8,7 +8,7 @@ export function APIContextProvider({ children }) {
     const [type, chat_id] = window.location.search.split("=");
     useEffect(() => {
         if (type === '?chat_id') {
-            fetch("http://wonpay.local/api/bot-login", {
+            fetch("https://wonpay.thesmart.uz/api/bot-login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
