@@ -8,7 +8,7 @@ const UzbCourse = () => {
     const [sellRate, setSellRate] = useState()
 
     const getExchangeRate = async () => {
-        const res = await fetch('https://cbu.uz/uz/arkhiv-kursov-valyut/json')
+        const res = await fetch('https://cbu.uz/uz/arkhiv-kursov-valyut/json', {mode: 'no-cors'})
 
         const data = await res.json()
         if (data) {
