@@ -33,7 +33,7 @@ const UzbCourse = () => {
                     <h3>O'zbekiston Valyuta kurslari:</h3>
                     <div className="chc-body-item">
                         <div className="chc-body-item-title">
-                            <h4>Sotib olish:</h4>
+                            <h4>Sotib olish sdfasdf:</h4>
                             <span>$1 = {buyRate} sum</span>
                         </div>
                         <div className="chc-body-item-body">
